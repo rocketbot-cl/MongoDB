@@ -1,4 +1,4 @@
-# Google Docs
+# MongoDB
 
 Module to work with MongoDB
 
