@@ -41,9 +41,7 @@ global client
 if module == "connect":
     url = GetParams('url')
     client = MongoClient(url)
-    
-    db = client.test
-    print(dir(db.prueba))
+
 
 if module == "getDatabases":
     result = GetParams("result")
@@ -52,6 +50,7 @@ if module == "getDatabases":
         database_names = client.database_names()
         SetVar(result, database_names)
     except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -63,6 +62,7 @@ if module == "getCollections":
         collections = client[database].list_collection_names()
         SetVar(result, collections)
     except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
         raise e
     
@@ -76,6 +76,7 @@ if module == "getDocuments":
         documents = [dict(document.items()) for document in collection.find()]
         SetVar(result, documents)
     except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -86,6 +87,7 @@ if module == "createCollection":
     try:
         client[database].create_collection(collection)
     except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -101,6 +103,7 @@ if module == "createDocument":
         SetVar(result, doc_id)
 
     except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -119,6 +122,7 @@ if module == "findById":
         SetVar(result, doc)
 
     except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -137,9 +141,31 @@ if module == "find":
         SetVar(result, documents)
 
     except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
         raise e
-    
+
+if module == "findAndReplace":
+    database = GetParams("db")
+    collection = GetParams("collection")
+    id_ = GetParams("id")
+    new_document = GetParams("new")
+    result = GetParams("result")
+
+    try:
+
+        collection = client[database][collection]
+        new_document = eval(new_document)
+        doc = collection.find_one_and_update({"_id": ObjectId(id_)}, {'$set': new_document})
+        response = True if doc else False
+
+        SetVar(result, response)
+
+    except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
+        PrintException()
+        raise e
+
     
     
 

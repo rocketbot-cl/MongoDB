@@ -11,7 +11,14 @@ Module to work with MongoDB
   <li>Create Document</li>
   <li>Find by Id</li>
   <li>Find</li>
+  <li>Update by Id</li>
 </ul>  
+
+## Updates
+
+### 6-Jul-2020
+- Update by Id: Added option to update documents
+
 
 ![alt text](https://raw.githubusercontent.com/rocketbot-cl/MongoDB/master/example/mongodb.png)
 

@@ -2,7 +2,7 @@
     "author":"Danilo Toro - Rocketbot - <danilo.toro@rocketbot.cl>",
     "description": "Módulo para trabajar con MongoDB.",
     "disclaimer":"THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-    "version":"0.1",
+    "version":"0.2",
     "license": "MIT",
     "homepage":"http://rockertbot.cl",
     "linux": true,
@@ -531,6 +531,102 @@
             "video_youtube": "",
             "icon": "  data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxOXB4IiB2aWV3Qm94PSIwIDAgMTIgMTkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA1NS4xICg3ODEzNikgLSBodHRwczovL3NrZXRjaGFwcC5jb20gLS0+CiAgICA8dGl0bGU+M0Y0N0U0REItRTc1RS00NzkyLUExMTgtREU1QkZERDQzNDg5PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxnIGlkPSJEZXNrdG9wIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgIDxnIGlkPSIxOTA1LW1kYi1ob21lcGFnZS0xNS4yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM1LjAwMDAwMCwgLTQyMC4wMDAwMDApIiBzdHJva2U9IiMxM0FBNTIiIHN0cm9rZS13aWR0aD0iMS41Ij4KICAgICAgICAgICAgPGcgaWQ9Imhlcm8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzMy4wMDAwMDAsIC01Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJDb3B5Ij4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgMjEwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0ibGVhZiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDI2OC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMS4zMzU5MDg0LDguNjA3NTI4NTcgTDQuNzY4MjczOTcsMTUuMjYwMjU2OCIgaWQ9IlNoYXBlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjA1MjA5MSwgMTEuOTMzODkzKSByb3RhdGUoLTQ1LjAwMDAwMCkgdHJhbnNsYXRlKC04LjA1MjA5MSwgLTExLjkzMzg5MykgIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTMuNTU0MTA0MSwyLjU1IEMxMy41NTQxMDQxLDIuNTUgMTMuMTEwMjE2OSwxNy4yMjg1NjM2IDMuMzQxMTI4NzUsMTIuODkyNDY3NCBDLTAuOTQwNzY2MDcyLDIuOTk5MDA5MjEgMTMuNTU0MTA0MSwyLjU1IDEzLjU1NDEwNDEsMi41NSBaIiBpZD0iU2hhcGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDguMDUyMDUyLCA4LjEyMTgwMCkgcm90YXRlKC00NS4wMDAwMDApIHRyYW5zbGF0ZSgtOC4wNTIwNTIsIC04LjEyMTgwMCkgIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
             "module": "find",
+            "module_name": "MongoDB",
+            "visible": true,
+            "options": false,
+            "father": "module",
+            "group": "scripts",
+            "linux": true,
+            "windows":true,
+            "mac":true,
+            "docker":true
+        },
+        {
+            "en": {
+                "title": "Update by Id",
+                "description": "Find by id and update values",
+                "title_options": null,
+                "options":null
+            },
+            "es": {
+                "title": "Actualizar por Id",
+                "description": "Busca por Id y actualiza el valor",
+                "title_options": null,
+                "options":null
+            },
+            "form": {
+                "css": "modal-lg",
+                "inputs": [
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "database",
+                            "en": "database"
+                        },
+                        "title": {
+                            "es": "Nombre de la base de datos: ",
+                            "en": "Database name: "
+                        },
+                        "id": "db",
+                        "css": "col-md-4"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "Colección",
+                            "en": "Collection"
+                        },
+                        "title": {
+                            "es": "Nombre de la Colección: ",
+                            "en": "Collection name: "
+                        },
+                        "id": "collection",
+                        "css": "col-md-4"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "5e4af2f81142cfef325a5405",
+                            "en": "5e4af2f81142cfef325a5405"
+                        },
+                        "title": {
+                            "es": "Id: ",
+                            "en": "Id: "
+                        },
+                        "id": "id",
+                        "css": "col-md-4"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "{'key':'value'}",
+                            "en": "{'key':'value'}"
+                        },
+                        "title": {
+                            "es": "Nuevo valor: ",
+                            "en": "New value: "
+                        },
+                        "id": "new",
+                        "css": "col-md-6"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "{result}",
+                            "en": "{result}"
+                        },
+                        "title": {
+                            "es": "Variable donde guardar el resultado: ",
+                            "en": "Result variable: "
+                        },
+                        "id": "result",
+                        "css": "col-md-6"
+                    }
+                ]
+            },
+            "video_youtube": "",
+            "icon": "  data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxOXB4IiB2aWV3Qm94PSIwIDAgMTIgMTkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA1NS4xICg3ODEzNikgLSBodHRwczovL3NrZXRjaGFwcC5jb20gLS0+CiAgICA8dGl0bGU+M0Y0N0U0REItRTc1RS00NzkyLUExMTgtREU1QkZERDQzNDg5PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxnIGlkPSJEZXNrdG9wIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgIDxnIGlkPSIxOTA1LW1kYi1ob21lcGFnZS0xNS4yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM1LjAwMDAwMCwgLTQyMC4wMDAwMDApIiBzdHJva2U9IiMxM0FBNTIiIHN0cm9rZS13aWR0aD0iMS41Ij4KICAgICAgICAgICAgPGcgaWQ9Imhlcm8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzMy4wMDAwMDAsIC01Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJDb3B5Ij4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgMjEwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0ibGVhZiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDI2OC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMS4zMzU5MDg0LDguNjA3NTI4NTcgTDQuNzY4MjczOTcsMTUuMjYwMjU2OCIgaWQ9IlNoYXBlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjA1MjA5MSwgMTEuOTMzODkzKSByb3RhdGUoLTQ1LjAwMDAwMCkgdHJhbnNsYXRlKC04LjA1MjA5MSwgLTExLjkzMzg5MykgIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTMuNTU0MTA0MSwyLjU1IEMxMy41NTQxMDQxLDIuNTUgMTMuMTEwMjE2OSwxNy4yMjg1NjM2IDMuMzQxMTI4NzUsMTIuODkyNDY3NCBDLTAuOTQwNzY2MDcyLDIuOTk5MDA5MjEgMTMuNTU0MTA0MSwyLjU1IDEzLjU1NDEwNDEsMi41NSBaIiBpZD0iU2hhcGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDguMDUyMDUyLCA4LjEyMTgwMCkgcm90YXRlKC00NS4wMDAwMDApIHRyYW5zbGF0ZSgtOC4wNTIwNTIsIC04LjEyMTgwMCkgIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
+            "module": "findAndReplace",
             "module_name": "MongoDB",
             "visible": true,
             "options": false,
