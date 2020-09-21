@@ -73,10 +73,14 @@ if module == "getDocuments":
 
     try:
         collection = client[database][collection]
-        documents = [dict(document.items()) for document in collection.find()]
+        documents = []
+        for document in collection.find():
+            doc = {key: str(value) for key, value in document.items()}
+            documents.append(doc)
+
         SetVar(result, documents)
     except Exception as e:
-        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
+        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
         PrintException()
         raise e
 
