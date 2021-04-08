@@ -3,7 +3,7 @@
 Module to work with MongoDB
 
 <ul>
-  <li>Conect to MongoDB</li>  
+  <li>Connect to MongoDB</li>  
   <li>List Database</li>
   <li>List Collection</li>
   <li>List Documents</li>
