@@ -40,8 +40,15 @@ global client
 
 if module == "connect":
     url = GetParams('url')
+    result = GetParams('result')
     client = MongoClient(url)
-
+    try:
+        client.server_info()
+        SetVar(result, True)
+    except Exception as e:
+        SetVar(result, False)
+        PrintException()
+        raise e
 
 if module == "getDatabases":
     result = GetParams("result")

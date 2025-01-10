@@ -2,7 +2,7 @@
     "author":"Danilo Toro - Rocketbot - <danilo.toro@rocketbot.cl>",
     "description": "Módulo para trabajar con MongoDB.",
     "disclaimer":"THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-    "version":"0.3",
+    "version":"1.4.0",
     "license": "MIT",
     "homepage":"http://rockertbot.cl",
     "linux": true,
@@ -48,6 +48,19 @@
                         },
                         "id": "url",
                         "css": "col-md-12"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "{result}",
+                            "en": "{result}"
+                        },
+                        "title": {
+                            "es": "Variable donde guardar el resultado: ",
+                            "en": "Result Variable: "
+                        },
+                        "id": "result",
+                        "css": "col-md-12"
                     }
                 ]
             },
@@ -83,12 +96,20 @@
                     {
                         "type": "input",
                         "placeholder": {
-                            "es": "{result}",
-                            "en": "{result}"
+                            "es": "result",
+                            "en": "result"
                         },
                         "title": {
                             "es": "Variable donde guardar el resultado: ",
                             "en": "Result variable: "
+                        },
+                        "description": {
+                            "es": "Variable donde se guardará el resultado",
+                            "en": "Variable where the result will be saved"
+                        },
+                        "help": {
+                            "es": "Variable sin {}",
+                            "en": "Variable without {}"
                         },
                         "id": "result",
                         "css": "col-md-12"
@@ -140,12 +161,20 @@
                     {
                         "type": "input",
                         "placeholder": {
-                            "es": "{result}",
-                            "en": "{result}"
+                            "es": "result",
+                            "en": "result"
                         },
                         "title": {
                             "es": "Variable donde guardar el resultado: ",
                             "en": "Result variable: "
+                        },
+                        "description": {
+                            "es": "Variable donde se guardará el resultado",
+                            "en": "Variable where the result will be saved"
+                        },
+                        "help": {
+                            "es": "Variable sin {}",
+                            "en": "Variable without {}"
                         },
                         "id": "result",
                         "css": "col-md-12"
@@ -210,12 +239,20 @@
                     {
                         "type": "input",
                         "placeholder": {
-                            "es": "{result}",
-                            "en": "{result}"
+                            "es": "result",
+                            "en": "result"
                         },
                         "title": {
                             "es": "Variable donde guardar el resultado: ",
                             "en": "Result variable: "
+                        },
+                        "description": {
+                            "es": "Variable donde se guardará el resultado",
+                            "en": "Variable where the result will be saved"
+                        },
+                        "help": {
+                            "es": "Variable sin {}",
+                            "en": "Variable without {}"
                         },
                         "id": "result",
                         "css": "col-md-12"
