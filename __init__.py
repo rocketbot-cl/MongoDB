@@ -128,12 +128,20 @@ if module == "findById":
 
         collection = client[database][collection]
         doc = collection.find_one({"_id": ObjectId(id_)})
-        doc = dict(doc.items())
+        
+        if doc is  None:
+            print("No documents were found with that ID")
+            doc = collection.find_one({"_id": id_})
+    
+        if doc is not None:    
+            doc_dict = dict(doc.items())
 
-        SetVar(result, doc)
-
+            SetVar(result, doc_dict)
+            
+        else:
+            SetVar(result, {})
     except Exception as e:
-        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
+        print("\x1B[" + "31;40mError:\x1B[" + "0m")
         PrintException()
         raise e
 
